@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		2C2ACA8C1D191D0900320086 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2ACA8B1D191D0900320086 /* main.m */; };
 		2C2ACA8F1D191D0900320086 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2ACA8E1D191D0900320086 /* AppDelegate.m */; };
-		2C2ACA921D191D0900320086 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2ACA911D191D0900320086 /* ViewController.m */; };
 		2C2ACA971D191D0900320086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2ACA961D191D0900320086 /* Assets.xcassets */; };
 		2C2ACA9A1D191D0900320086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2ACA981D191D0900320086 /* LaunchScreen.storyboard */; };
 		2C2ACAA51D191D0900320086 /* BaseAppStructTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2ACAA41D191D0900320086 /* BaseAppStructTests.m */; };
 		2C2ACAB01D191D0900320086 /* BaseAppStructUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2ACAAF1D191D0900320086 /* BaseAppStructUITests.m */; };
+		2C2ACACD1D19387500320086 /* BaseNetworkAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2ACACC1D19387500320086 /* BaseNetworkAPI.m */; };
+		2C2ACAD21D193D2000320086 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2ACAD11D193D2000320086 /* NSObject+Common.m */; };
+		E08A755EB156C79AE4B17315 /* libPods-BaseAppStruct.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEA440E7E3119120068353F /* libPods-BaseAppStruct.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,6 @@
 		2C2ACA8B1D191D0900320086 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C2ACA8D1D191D0900320086 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C2ACA8E1D191D0900320086 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2C2ACA901D191D0900320086 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2C2ACA911D191D0900320086 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2C2ACA961D191D0900320086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C2ACA991D191D0900320086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C2ACA9B1D191D0900320086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,15 @@
 		2C2ACAAB1D191D0900320086 /* BaseAppStructUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseAppStructUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2ACAAF1D191D0900320086 /* BaseAppStructUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAppStructUITests.m; sourceTree = "<group>"; };
 		2C2ACAB11D191D0900320086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2ACACB1D19387500320086 /* BaseNetworkAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetworkAPI.h; sourceTree = "<group>"; };
+		2C2ACACC1D19387500320086 /* BaseNetworkAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetworkAPI.m; sourceTree = "<group>"; };
+		2C2ACAD01D193D2000320086 /* NSObject+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Common.h"; sourceTree = "<group>"; };
+		2C2ACAD11D193D2000320086 /* NSObject+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Common.m"; sourceTree = "<group>"; };
+		2C2ACAD41D193E7900320086 /* Definations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definations.h; sourceTree = "<group>"; };
+		2C2ACAD51D193E9E00320086 /* Configer.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Configer.pch; sourceTree = "<group>"; };
+		62B7D2A87D408762986A7529 /* Pods-BaseAppStruct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseAppStruct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseAppStruct/Pods-BaseAppStruct.debug.xcconfig"; sourceTree = "<group>"; };
+		8ED55B3A7F21DD88C1A230F3 /* Pods-BaseAppStruct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseAppStruct.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseAppStruct/Pods-BaseAppStruct.release.xcconfig"; sourceTree = "<group>"; };
+		BEEA440E7E3119120068353F /* libPods-BaseAppStruct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseAppStruct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E08A755EB156C79AE4B17315 /* libPods-BaseAppStruct.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,8 @@
 				2C2ACAA31D191D0900320086 /* BaseAppStructTests */,
 				2C2ACAAE1D191D0900320086 /* BaseAppStructUITests */,
 				2C2ACA881D191D0900320086 /* Products */,
+				4D0FB379C655AEBD6B58D9CD /* Pods */,
+				DE84FF4062A43531F9563435 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +111,9 @@
 		2C2ACA891D191D0900320086 /* BaseAppStruct */ = {
 			isa = PBXGroup;
 			children = (
+				2C2ACAC51D19383300320086 /* Handler */,
 				2C2ACA8D1D191D0900320086 /* AppDelegate.h */,
 				2C2ACA8E1D191D0900320086 /* AppDelegate.m */,
-				2C2ACA901D191D0900320086 /* ViewController.h */,
-				2C2ACA911D191D0900320086 /* ViewController.m */,
 				2C2ACA961D191D0900320086 /* Assets.xcassets */,
 				2C2ACA981D191D0900320086 /* LaunchScreen.storyboard */,
 				2C2ACA9B1D191D0900320086 /* Info.plist */,
@@ -137,6 +148,68 @@
 			path = BaseAppStructUITests;
 			sourceTree = "<group>";
 		};
+		2C2ACAC51D19383300320086 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				2C2ACAD31D193E3800320086 /* Configer */,
+				2C2ACACF1D193D1600320086 /* Category */,
+				2C2ACAC61D19383300320086 /* Advertisment */,
+				2C2ACAC71D19383300320086 /* NetWork */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		2C2ACAC61D19383300320086 /* Advertisment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Advertisment;
+			sourceTree = "<group>";
+		};
+		2C2ACAC71D19383300320086 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				2C2ACACB1D19387500320086 /* BaseNetworkAPI.h */,
+				2C2ACACC1D19387500320086 /* BaseNetworkAPI.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		2C2ACACF1D193D1600320086 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2C2ACAD01D193D2000320086 /* NSObject+Common.h */,
+				2C2ACAD11D193D2000320086 /* NSObject+Common.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2C2ACAD31D193E3800320086 /* Configer */ = {
+			isa = PBXGroup;
+			children = (
+				2C2ACAD41D193E7900320086 /* Definations.h */,
+				2C2ACAD51D193E9E00320086 /* Configer.pch */,
+			);
+			path = Configer;
+			sourceTree = "<group>";
+		};
+		4D0FB379C655AEBD6B58D9CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62B7D2A87D408762986A7529 /* Pods-BaseAppStruct.debug.xcconfig */,
+				8ED55B3A7F21DD88C1A230F3 /* Pods-BaseAppStruct.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE84FF4062A43531F9563435 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA440E7E3119120068353F /* libPods-BaseAppStruct.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C2ACAB41D191D0900320086 /* Build configuration list for PBXNativeTarget "BaseAppStruct" */;
 			buildPhases = (
+				7AD354E68EA5046F5A0FDAD0 /* Check Pods Manifest.lock */,
 				2C2ACA831D191D0900320086 /* Sources */,
 				2C2ACA841D191D0900320086 /* Frameworks */,
 				2C2ACA851D191D0900320086 /* Resources */,
+				F9EE090D035A19E868B9F38A /* Embed Pods Frameworks */,
+				DF1EF417FD83C25B1E7AD5E7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,13 +337,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7AD354E68EA5046F5A0FDAD0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF1EF417FD83C25B1E7AD5E7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseAppStruct/Pods-BaseAppStruct-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9EE090D035A19E868B9F38A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseAppStruct/Pods-BaseAppStruct-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C2ACA831D191D0900320086 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2ACA921D191D0900320086 /* ViewController.m in Sources */,
+				2C2ACAD21D193D2000320086 /* NSObject+Common.m in Sources */,
 				2C2ACA8F1D191D0900320086 /* AppDelegate.m in Sources */,
+				2C2ACACD1D19387500320086 /* BaseNetworkAPI.m in Sources */,
 				2C2ACA8C1D191D0900320086 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,8 +524,10 @@
 		};
 		2C2ACAB51D191D0900320086 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62B7D2A87D408762986A7529 /* Pods-BaseAppStruct.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseAppStruct/Handler/Configer/Configer.pch";
 				INFOPLIST_FILE = BaseAppStruct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Havi.BaseAppStruct;
@@ -410,8 +537,10 @@
 		};
 		2C2ACAB61D191D0900320086 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED55B3A7F21DD88C1A230F3 /* Pods-BaseAppStruct.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseAppStruct/Handler/Configer/Configer.pch";
 				INFOPLIST_FILE = BaseAppStruct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Havi.BaseAppStruct;
@@ -484,6 +613,7 @@
 				2C2ACAB61D191D0900320086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C2ACAB71D191D0900320086 /* Build configuration list for PBXNativeTarget "BaseAppStructTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +622,7 @@
 				2C2ACAB91D191D0900320086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C2ACABA1D191D0900320086 /* Build configuration list for PBXNativeTarget "BaseAppStructUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +631,7 @@
 				2C2ACABC1D191D0900320086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
