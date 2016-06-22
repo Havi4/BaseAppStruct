@@ -41,7 +41,7 @@
     [userDefault setObject:@(isTest) forKey:kTestKey];
     [userDefault synchronize];
     //将api中的client改变为测试环境
-    [BaseNetworkAPI chageJSONClient];
+    [BaseNetworkAPI changeJSONClient];
     //我们可以在切换之后进行其他的操作，比如改变导航栏的颜色
 //    [[UINavigationBar appearance] setBackgroundImage: [UIImage imageWithColor:[UIColor colorWithHexString:isTest?@"0x3bbd79": @"0x28303b"]] forBarMetrics:UIBarMetricsDefault];
 }

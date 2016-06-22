@@ -37,7 +37,7 @@ typedef enum {
  *  @return 返回更改后的网络请求Client
  */
 
-+ (instancetype)chageJSONClient;
++ (instancetype)changeJSONClient;
 
 
 /**
@@ -58,5 +58,10 @@ typedef enum {
        successBlock:(void (^)(id responseObject))success
        failureBlock:(void (^)(NSError *error))failure
       progerssBlock:(void (^)(CGFloat progressValue))progress;
+
+- (void)downloadImageWithPath:(NSString *)path
+       successBlock:(void (^)(id responseObject))success
+       failureBlock:(void (^)(NSError *error))failure
+        progerssBlock:(void (^)(CGFloat progressValue))progress;
 
 @end
