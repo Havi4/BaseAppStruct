@@ -54,12 +54,12 @@
         
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
         NSString *adversement = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"Adversement"];
+//        NSFileManager *fileManager = [[NSFileManager alloc] init];
+//        if (![[NSFileManager defaultManager] fileExistsAtPath:adversement]) {
+//            [fileManager createDirectoryAtPath:adversement withIntermediateDirectories:YES attributes:nil error:nil];
+//        }
         NSString *imageFile = [adversement stringByAppendingPathComponent:imageName];
-        NSFileManager *fileManager = [[NSFileManager alloc] init];
-        if (![[NSFileManager defaultManager] fileExistsAtPath:imageFile]) {
-            [fileManager createDirectoryAtPath:adversement withIntermediateDirectories:YES attributes:nil error:nil];
-        }
-        
+
         return imageFile;
     }
     
@@ -106,12 +106,12 @@
     NSString *imageName = stringArr.lastObject;
     
     // 拼接沙盒路径
-    NSString *filePath = [self getFilePathWithImageName:imageName];
+    NSString *filePath = [self getFilePathWithImageName:imageName];//图片
     BOOL isExist = [self isFileExistWithFilePath:filePath];
     if (!isExist){// 如果该图片不存在，则删除老图片，下载新图片
         
         BaseNetworkAPI *a = [BaseNetworkAPI sharedJSONClient];
-        [a downloadImageWithPath:filePath successBlock:^(id responseObject) {
+        [a downloadImageWithPath:imageUrl successBlock:^(id responseObject) {
             
         } failureBlock:^(NSError *error) {
             

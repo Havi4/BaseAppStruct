@@ -211,7 +211,14 @@ static BaseNetworkAPI *_BaseNetworkAPI = nil;
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     
     NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:nil destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+        NSString *adversement = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"Adversement"];
+        NSFileManager *fileManager = [[NSFileManager alloc] init];
+        if (![[NSFileManager defaultManager] fileExistsAtPath:adversement]) {
+            [fileManager createDirectoryAtPath:adversement withIntermediateDirectories:YES attributes:nil error:nil];
+        }
         NSString *filePath = [self getFilePathWithImageName:[response suggestedFilename]];
+        [self deleteOldImage];
         NSURL *url = [NSURL fileURLWithPath:filePath];
         [kUserDefaults setValue:[response suggestedFilename] forKey:@"adImageName"];
         [kUserDefaults synchronize];

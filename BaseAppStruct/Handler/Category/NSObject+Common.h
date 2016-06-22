@@ -48,4 +48,5 @@
 
 #pragma mark 广告位更新
 - (void)getAdvertisingImage;
+- (void)deleteOldImage;
 @end
