@@ -15,6 +15,8 @@
 #define kAppBaseURL @"http://webservice.meddo99.com:9000/"
 #define kAppTestBaseURL @"http://webservice.meddo99.com:9001/"
 #define kKeyWindow [UIApplication sharedApplication].keyWindow
+#define kUserDefaults [NSUserDefaults standardUserDefaults]
+#define kAdImageName @"adImageName";
 
 #define kWXPlatform @"wx.com"
 #define kSinaPlatform @"sina.com"

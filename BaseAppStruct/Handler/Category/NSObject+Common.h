@@ -40,4 +40,12 @@
 + (UIViewController *)appPresentedRootViewController;
 
 + (UIViewController *)appNaviRootViewController;
+
+#pragma mark 图片路径
+
+- (NSString *)getFilePathWithImageName:(NSString *)imageName;
+- (BOOL)isFileExistWithFilePath:(NSString *)filePath;
+
+#pragma mark 广告位更新
+- (void)getAdvertisingImage;
 @end

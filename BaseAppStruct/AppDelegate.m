@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "AdvertisementView.h"
 @interface AppDelegate ()
 
 @end
@@ -18,9 +19,26 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     UIViewController *main = [[MainViewController alloc]init];
     self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:main];
     [self.window makeKeyAndVisible];
+    //添加广告位
+    // 1.判断沙盒中是否存在广告图片，如果存在，直接显示
+    NSString *filePath = [self getFilePathWithImageName:[kUserDefaults valueForKey:@"adImageName"]];
+    
+    BOOL isExist = [self isFileExistWithFilePath:filePath];
+    if (isExist) {// 图片存在
+        
+        AdvertisementView *advertiseView = [[AdvertisementView alloc] initWithFrame:self.window.bounds];
+        advertiseView.filePath = filePath;
+        [advertiseView show];
+        
+    }
+    
+    // 2.无论沙盒中是否存在广告图片，都需要重新调用广告接口，判断广告是否更新
+//    [self getAdvertisingImage];
+
     return YES;
 }
 
