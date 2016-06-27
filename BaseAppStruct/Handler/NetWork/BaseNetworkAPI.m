@@ -211,19 +211,8 @@ static BaseNetworkAPI *_BaseNetworkAPI = nil;
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     
     NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:nil destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
-        NSString *adversement = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"Adversement"];
-        NSFileManager *fileManager = [[NSFileManager alloc] init];
-        if (![[NSFileManager defaultManager] fileExistsAtPath:adversement]) {
-            [fileManager createDirectoryAtPath:adversement withIntermediateDirectories:YES attributes:nil error:nil];
-        }
-        NSString *filePath = [self getFilePathWithImageName:[response suggestedFilename]];
-        [self deleteOldImage];
-        NSURL *url = [NSURL fileURLWithPath:filePath];
-        [kUserDefaults setValue:[response suggestedFilename] forKey:@"adImageName"];
-        [kUserDefaults synchronize];
-        return url;
-        // 如果有广告链接，将广告链接也保存下来
+        NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+        return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
     } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
         NSLog(@"File downloaded to: %@", filePath);
     }];

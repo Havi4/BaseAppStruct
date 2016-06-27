@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-static NSString *const adImageName = @"adImageName";
-static NSString *const adUrl = @"adUrl";
+#import "NSObject+AdvertisementView.h"
 
 @interface AdvertisementView : UIView
 
