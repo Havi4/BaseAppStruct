@@ -18,6 +18,7 @@
 		2C2ACAD81D194ED100320086 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2ACAD71D194ED100320086 /* MainViewController.m */; };
 		2C2ACADB1D1A57A700320086 /* AdvertisementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2ACADA1D1A57A700320086 /* AdvertisementView.m */; };
 		2C3724101D21305800AA0945 /* NSObject+AdvertisementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C37240F1D21305800AA0945 /* NSObject+AdvertisementView.m */; };
+		2CDCDC6A1D2A127A00F636EC /* HYBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDCDC691D2A127A00F636EC /* HYBNetworking.m */; };
 		E08A755EB156C79AE4B17315 /* libPods-BaseAppStruct.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEA440E7E3119120068353F /* libPods-BaseAppStruct.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		2C2ACADA1D1A57A700320086 /* AdvertisementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertisementView.m; sourceTree = "<group>"; };
 		2C37240E1D21305800AA0945 /* NSObject+AdvertisementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AdvertisementView.h"; sourceTree = "<group>"; };
 		2C37240F1D21305800AA0945 /* NSObject+AdvertisementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AdvertisementView.m"; sourceTree = "<group>"; };
+		2CDCDC681D2A127A00F636EC /* HYBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBNetworking.h; sourceTree = "<group>"; };
+		2CDCDC691D2A127A00F636EC /* HYBNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBNetworking.m; sourceTree = "<group>"; };
 		62B7D2A87D408762986A7529 /* Pods-BaseAppStruct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseAppStruct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseAppStruct/Pods-BaseAppStruct.debug.xcconfig"; sourceTree = "<group>"; };
 		8ED55B3A7F21DD88C1A230F3 /* Pods-BaseAppStruct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseAppStruct.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseAppStruct/Pods-BaseAppStruct.release.xcconfig"; sourceTree = "<group>"; };
 		BEEA440E7E3119120068353F /* libPods-BaseAppStruct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseAppStruct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +187,7 @@
 		2C2ACAC71D19383300320086 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				2CDCDC671D2A127A00F636EC /* HYBNetworking */,
 				2C2ACACB1D19387500320086 /* BaseNetworkAPI.h */,
 				2C2ACACC1D19387500320086 /* BaseNetworkAPI.m */,
 			);
@@ -206,6 +210,15 @@
 				2C2ACAD51D193E9E00320086 /* Configer.pch */,
 			);
 			path = Configer;
+			sourceTree = "<group>";
+		};
+		2CDCDC671D2A127A00F636EC /* HYBNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2CDCDC681D2A127A00F636EC /* HYBNetworking.h */,
+				2CDCDC691D2A127A00F636EC /* HYBNetworking.m */,
+			);
+			path = HYBNetworking;
 			sourceTree = "<group>";
 		};
 		4D0FB379C655AEBD6B58D9CD /* Pods */ = {
@@ -410,6 +423,7 @@
 				2C2ACA8F1D191D0900320086 /* AppDelegate.m in Sources */,
 				2C2ACACD1D19387500320086 /* BaseNetworkAPI.m in Sources */,
 				2C2ACAD81D194ED100320086 /* MainViewController.m in Sources */,
+				2CDCDC6A1D2A127A00F636EC /* HYBNetworking.m in Sources */,
 				2C2ACADB1D1A57A700320086 /* AdvertisementView.m in Sources */,
 				2C2ACA8C1D191D0900320086 /* main.m in Sources */,
 			);
